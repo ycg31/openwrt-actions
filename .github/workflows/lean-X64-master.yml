@@ -53,8 +53,9 @@ jobs:
           git clone https://github.com/openwrt-develop/luci-theme-atmaterial.git
           git clone https://github.com/rosywrt/luci-theme-rosy
           git clone https://github.com/Ameykyl/luci-app-koolproxyR
-          git clone https://github.com/vernesong/OpenClash.git
           git clone https://github.com/frainzy1477/luci-app-clash.git
+          git clone https://github.com/vernesong/OpenClash.git openclash
+          cp openclash/luci-app-openclash luci-app-openclash
                     
     - name: Update feeds
       run: cd openwrt && ./scripts/feeds update -a
