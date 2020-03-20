@@ -71,6 +71,7 @@ jobs:
     - name: Make Defconfig
       run: |
           cd openwrt
+          ../diy.sh
           make defconfig
     - name: Make download
       run: |
