@@ -56,6 +56,7 @@ jobs:
           git clone https://github.com/frainzy1477/luci-app-clash.git
           git clone https://github.com/vernesong/OpenClash.git openclash
           cp openclash/luci-app-openclash luci-app-openclash
+          rm    -rfv  openclash/luci-app-openclash
                     
     - name: Update feeds
       run: cd openwrt && ./scripts/feeds update -a
